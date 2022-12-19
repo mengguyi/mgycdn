@@ -58,9 +58,6 @@
             <dt><a href="module-pdfjsLib-PDFDocumentProxy.html">PDFDocumentProxy</a></dt>
             <dd></dd>
         
-            <dt><a href="module-pdfjsLib-PDFObjects.html">PDFObjects</a></dt>
-            <dd></dd>
-        
             <dt><a href="module-pdfjsLib-PDFPageProxy.html">PDFPageProxy</a></dt>
             <dd></dd>
         
@@ -133,7 +130,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line3335">line 3335</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line3410">line 3410</a>
     </li></ul></dd>
     
 
@@ -201,7 +198,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line3332">line 3332</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line3407">line 3407</a>
     </li></ul></dd>
     
 
@@ -283,7 +280,19 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">GetDocumentParameters</span>
+<span class="param-type">string</span>
+|
+
+<span class="param-type">URL</span>
+|
+
+<span class="param-type">TypedArray</span>
+|
+
+<span class="param-type">PDFDataRangeTransport</span>
+|
+
+<span class="param-type">DocumentInitParameters</span>
 
 
             
@@ -335,7 +344,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line242">line 242</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line232">line 232</a>
     </li></ul></dd>
     
 
@@ -390,83 +399,6 @@ e.g. no cross-domain requests without CORS.
         <h3 class="subsection-title">Type Definitions</h3>
 
         
-                
-<h4 class="name" id="~BinaryData">BinaryData</h4>
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">TypedArray</span>
-|
-
-<span class="param-type">ArrayBuffer</span>
-|
-
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;number:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
-|
-
-<span class="param-type">string</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line120">line 120</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-            
                 
 <h4 class="name" id="~DocumentInitParameters">DocumentInitParameters</h4>
 
@@ -561,7 +493,13 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">BinaryData</span>
+<span class="param-type">TypedArray</span>
+|
+
+<span class="param-type">Array.&lt;number></span>
+|
+
+<span class="param-type">string</span>
 
 
             
@@ -579,9 +517,9 @@ e.g. no cross-domain requests without CORS.
 
             
 
-            <td class="description last">Binary PDF data.
-  Use typed arrays (Uint8Array) to improve the memory usage. If PDF data is
-  BASE64-encoded, use `atob()` to convert it to a binary string first.</td>
+            <td class="description last">Binary PDF data. Use
+   typed arrays (Uint8Array) to improve the memory usage. If PDF data is
+   BASE64-encoded, use `atob()` to convert it to a binary string first.</td>
         </tr>
 
     
@@ -1544,7 +1482,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line130">line 130</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line126">line 126</a>
     </li></ul></dd>
     
 
@@ -1680,90 +1618,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1112">line 1112</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-            
-                
-<h4 class="name" id="~GetDocumentParameters">GetDocumentParameters</h4>
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">string</span>
-|
-
-<span class="param-type">URL</span>
-|
-
-<span class="param-type">TypedArray</span>
-|
-
-<span class="param-type">ArrayBuffer</span>
-|
-
-<span class="param-type">PDFDataRangeTransport</span>
-|
-
-<span class="param-type">DocumentInitParameters</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line224">line 224</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1125">line 1125</a>
     </li></ul></dd>
     
 
@@ -1905,37 +1760,6 @@ e.g. no cross-domain requests without CORS.
         </tr>
 
     
-
-        <tr>
-            
-                <td class="name"><code>printAnnotationStorage</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">PrintAnnotationStorage</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
     </tbody>
 </table>
 
@@ -1971,7 +1795,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1167">line 1167</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1175">line 1175</a>
     </li></ul></dd>
     
 
@@ -2038,6 +1862,36 @@ e.g. no cross-domain requests without CORS.
     </thead>
 
     <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>normalizeWhitespace</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Replaces all occurrences of
+  whitespace with standard spaces (0x20). The default value is `false`.</td>
+        </tr>
+
     
 
         <tr>
@@ -2136,7 +1990,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1057">line 1057</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1068">line 1068</a>
     </li></ul></dd>
     
 
@@ -2396,7 +2250,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1042">line 1042</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1053">line 1053</a>
     </li></ul></dd>
     
 
@@ -2566,7 +2420,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line935">line 935</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line937">line 937</a>
     </li></ul></dd>
     
 
@@ -2709,7 +2563,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line541">line 541</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line519">line 519</a>
     </li></ul></dd>
     
 
@@ -2876,7 +2730,7 @@ e.g. no cross-domain requests without CORS.
 <span class="param-type">string</span>
 |
 
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;any:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Array.&lt;any></span>
 |
 
 <span class="param-type">null</span>
@@ -3006,7 +2860,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;OutlineNode:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Array.&lt;OutlineNode></span>
 
 
             
@@ -3055,7 +2909,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line883">line 883</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line885">line 885</a>
     </li></ul></dd>
     
 
@@ -3126,7 +2980,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Object:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;string:<a href="module-pdfjsLib-PDFObjects.html"></a>, boolean:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Object.&lt;string, boolean></span>
 
 
             
@@ -3151,7 +3005,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Object:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;string:<a href="module-pdfjsLib-PDFObjects.html"></a>, boolean:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Object.&lt;string, boolean></span>
 
 
             
@@ -3202,7 +3056,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line739">line 739</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line741">line 741</a>
     </li></ul></dd>
     
 
@@ -3277,7 +3131,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;number:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Array.&lt;number></span>
 
 
             
@@ -3300,7 +3154,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;any:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Array.&lt;any></span>
 
 
             
@@ -3350,7 +3204,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1207">line 1207</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1214">line 1214</a>
     </li></ul></dd>
     
 
@@ -3543,7 +3397,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1887">line 1887</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line2023">line 2023</a>
     </li></ul></dd>
     
 
@@ -3686,7 +3540,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line124">line 124</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line120">line 120</a>
     </li></ul></dd>
     
 
@@ -3896,7 +3750,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;any:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Array.&lt;any></span>
 
 
             
@@ -3916,6 +3770,38 @@ e.g. no cross-domain requests without CORS.
 
             <td class="description last">Additional transform, applied just
   before viewport transform.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>imageLayer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">An object that has `beginLayout`,
+  `endLayout` and `appendImage` functions.</td>
         </tr>
 
     
@@ -3985,43 +3871,7 @@ e.g. no cross-domain requests without CORS.
   Any valid `canvas.fillStyle` can be used: a `DOMString` parsed as CSS
   <color> value, a `CanvasGradient` object (a linear or radial gradient) or
   a `CanvasPattern` object (a repetitive image). The default value is
-  'rgb(255,255,255)'.
-
-  NOTE: This option may be partially, or completely, ignored when the
-  `pageColors`-option is used.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>pageColors</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Overwrites background and foreground colors
-  with user defined ones in order to improve readability in high contrast
-  mode.</td>
+  'rgb(255,255,255)'.</td>
         </tr>
 
     
@@ -4034,7 +3884,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Promise:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;OptionalContentConfig:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Promise.&lt;OptionalContentConfig></span>
 
 
             
@@ -4068,7 +3918,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Map:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;string:<a href="module-pdfjsLib-PDFObjects.html"></a>, HTMLCanvasElement:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Map.&lt;string, Canvas></span>
 
 
             
@@ -4086,39 +3936,8 @@ e.g. no cross-domain requests without CORS.
 
             
 
-            <td class="description last">Map some
-  annotation ids with canvases used to render them.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>printAnnotationStorage</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">PrintAnnotationStorage</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"></td>
+            <td class="description last">Map some annotation
+  ids with canvases used to render them.</td>
         </tr>
 
     
@@ -4157,7 +3976,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1121">line 1121</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1134">line 1134</a>
     </li></ul></dd>
     
 
@@ -4305,7 +4124,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1198">line 1198</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1205">line 1205</a>
     </li></ul></dd>
     
 
@@ -4380,7 +4199,7 @@ e.g. no cross-domain requests without CORS.
             <td class="type">
             
                 
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;(StructTreeNode:<a href="module-pdfjsLib-PDFObjects.html"></a>|StructTreeContent:<a href="module-pdfjsLib-PDFObjects.html"></a>)></span>
+<span class="param-type">Array.&lt;(StructTreeNode|StructTreeContent)></span>
 
 
             
@@ -4454,7 +4273,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1188">line 1188</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1195">line 1195</a>
     </li></ul></dd>
     
 
@@ -4529,7 +4348,7 @@ in the PDF.</td>
             <td class="type">
             
                 
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;(TextItem:<a href="module-pdfjsLib-PDFObjects.html"></a>|TextMarkedContent:<a href="module-pdfjsLib-PDFObjects.html"></a>)></span>
+<span class="param-type">Array.&lt;(TextItem|TextMarkedContent)></span>
 
 
             
@@ -4554,7 +4373,7 @@ in the PDF.</td>
             <td class="type">
             
                 
-<span class="param-type">Object:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;string:<a href="module-pdfjsLib-PDFObjects.html"></a>, TextStyle:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Object.&lt;string, TextStyle></span>
 
 
             
@@ -4604,7 +4423,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1067">line 1067</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1080">line 1080</a>
     </li></ul></dd>
     
 
@@ -4725,7 +4544,7 @@ in the PDF.</td>
             <td class="type">
             
                 
-<span class="param-type">Array:<a href="module-pdfjsLib-PDFObjects.html"></a>.&lt;any:<a href="module-pdfjsLib-PDFObjects.html"></a>></span>
+<span class="param-type">Array.&lt;any></span>
 
 
             
@@ -4867,7 +4686,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1078">line 1078</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1091">line 1091</a>
     </li></ul></dd>
     
 
@@ -5016,7 +4835,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1092">line 1092</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1105">line 1105</a>
     </li></ul></dd>
     
 
@@ -5209,7 +5028,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1102">line 1102</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line1115">line 1115</a>
     </li></ul></dd>
     
 
@@ -5301,7 +5120,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line112">line 112</a>
+        <a href="display_api.js.html">display/api.js</a>, <a href="display_api.js.html#line112">line 112</a>
     </li></ul></dd>
     
 
@@ -5331,13 +5150,13 @@ in the PDF.</td>
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-pdfjsLib.html">pdfjsLib</a></li></ul><h3>Classes</h3><ul><li><a href="module-pdfjsLib-PDFDataRangeTransport.html">PDFDataRangeTransport</a></li><li><a href="module-pdfjsLib-PDFDocumentLoadingTask.html">PDFDocumentLoadingTask</a></li><li><a href="module-pdfjsLib-PDFDocumentProxy.html">PDFDocumentProxy</a></li><li><a href="module-pdfjsLib-PDFObjects.html">PDFObjects</a></li><li><a href="module-pdfjsLib-PDFPageProxy.html">PDFPageProxy</a></li><li><a href="module-pdfjsLib-PDFWorker.html">PDFWorker</a></li><li><a href="module-pdfjsLib-RenderTask.html">RenderTask</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-pdfjsLib.html">pdfjsLib</a></li></ul><h3>Externals</h3><ul><li><a href="external-Promise.html">Promise</a></li></ul><h3>Classes</h3><ul><li><a href="module-pdfjsLib-PDFDataRangeTransport.html">PDFDataRangeTransport</a></li><li><a href="module-pdfjsLib-PDFDocumentLoadingTask.html">PDFDocumentLoadingTask</a></li><li><a href="module-pdfjsLib-PDFDocumentProxy.html">PDFDocumentProxy</a></li><li><a href="module-pdfjsLib-PDFPageProxy.html">PDFPageProxy</a></li><li><a href="module-pdfjsLib-PDFWorker.html">PDFWorker</a></li><li><a href="module-pdfjsLib-RenderTask.html">RenderTask</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Wed Sep 07 2022 09:51:15 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Wed Dec 15 2021 18:51:08 GMT+0000 (Greenwich Mean Time)
 </footer>
 
 <script> prettyPrint(); </script>
