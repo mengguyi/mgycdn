@@ -28,14 +28,56 @@
 
 <header>
     
-        
-    
 </header>
 
 <article>
     <div class="container-overview">
     
         
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
 
         
     
@@ -133,7 +175,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line3335">line 3335</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line3369">line 3369</a>
     </li></ul></dd>
     
 
@@ -201,7 +243,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line3332">line 3332</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line3366">line 3366</a>
     </li></ul></dd>
     
 
@@ -335,7 +377,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line242">line 242</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line246">line 246</a>
     </li></ul></dd>
     
 
@@ -1242,6 +1284,40 @@ e.g. no cross-domain requests without CORS.
 
         <tr>
             
+                <td class="name"><code>isOffscreenCanvasSupported</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Determines if we can use
+  `OffscreenCanvas` in the worker. Primarily used to improve performance of
+  image conversion/rendering.
+  The default value is `true` in web environments and `false` in Node.js.</td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>disableFontFace</code></td>
             
 
@@ -1680,7 +1756,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1112">line 1112</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1137">line 1137</a>
     </li></ul></dd>
     
 
@@ -1763,7 +1839,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line224">line 224</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line228">line 228</a>
     </li></ul></dd>
     
 
@@ -1971,172 +2047,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1167">line 1167</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-            
-                
-<h4 class="name" id="~getTextContentParameters">getTextContentParameters</h4>
-
-
-
-
-<div class="description">
-    Page getTextContent parameters.
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Object</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>disableCombineTextItems</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Do not attempt to combine
-  same line TextItem's. The default value is `false`.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>includeMarkedContent</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">When true include marked
-  content items in the items array of TextContent. The default is `false`.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1057">line 1057</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1192">line 1192</a>
     </li></ul></dd>
     
 
@@ -2396,7 +2307,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1042">line 1042</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1067">line 1067</a>
     </li></ul></dd>
     
 
@@ -2566,7 +2477,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line935">line 935</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line960">line 960</a>
     </li></ul></dd>
     
 
@@ -2709,7 +2620,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line541">line 541</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line548">line 548</a>
     </li></ul></dd>
     
 
@@ -3055,7 +2966,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line883">line 883</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line908">line 908</a>
     </li></ul></dd>
     
 
@@ -3202,7 +3113,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line739">line 739</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line761">line 761</a>
     </li></ul></dd>
     
 
@@ -3350,7 +3261,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1207">line 1207</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1232">line 1232</a>
     </li></ul></dd>
     
 
@@ -3543,7 +3454,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1887">line 1887</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1915">line 1915</a>
     </li></ul></dd>
     
 
@@ -4157,7 +4068,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1121">line 1121</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1146">line 1146</a>
     </li></ul></dd>
     
 
@@ -4305,7 +4216,7 @@ e.g. no cross-domain requests without CORS.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1198">line 1198</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1223">line 1223</a>
     </li></ul></dd>
     
 
@@ -4454,7 +4365,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1188">line 1188</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1213">line 1213</a>
     </li></ul></dd>
     
 
@@ -4604,7 +4515,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1067">line 1067</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1092">line 1092</a>
     </li></ul></dd>
     
 
@@ -4867,7 +4778,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1078">line 1078</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1103">line 1103</a>
     </li></ul></dd>
     
 
@@ -5016,7 +4927,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1092">line 1092</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1117">line 1117</a>
     </li></ul></dd>
     
 
@@ -5209,7 +5120,7 @@ in the PDF.</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1102">line 1102</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1127">line 1127</a>
     </li></ul></dd>
     
 
@@ -5318,6 +5229,171 @@ in the PDF.</td>
 
 
             
+                
+<h4 class="name" id="~getTextContentParameters">getTextContentParameters</h4>
+
+
+
+
+<div class="description">
+    Page getTextContent parameters.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>disableCombineTextItems</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Do not attempt to combine
+  same line TextItem's. The default value is `false`.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includeMarkedContent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">When true include marked
+  content items in the items array of TextContent. The default is `false`.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line1082">line 1082</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
     
 
     
@@ -5337,7 +5413,7 @@ in the PDF.</td>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Wed Sep 07 2022 09:51:15 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Mon Dec 19 2022 22:11:55 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
